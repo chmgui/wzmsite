@@ -17,7 +17,7 @@
                     </div>
                     <div class="content">
                         <p>{{ service.data.description | striptags(true) | escape | nl2br }}  </p>
-                        <a href="{{ service.url }}">Read more</a>
+                        <a href="{{ '{{ service.url }}' | url }}">Read more</a>
                     </div>
                 </div>
             </div>

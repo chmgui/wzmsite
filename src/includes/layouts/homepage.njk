@@ -14,7 +14,7 @@
                             <h2>{{ banner.headline }}</h2>
                             <p>{{ banner.blurb }}</p>
                             <div class="slide-btn">
-                                <a href="{{ banner.link.url }}" class="button">{{ banner.link.text }}</a>
+                                <a href="/wzmsite{{ banner.link.url }}" class="button">{{ banner.link.text }}</a>
                             </div>
                         </div>
                     </div>
@@ -36,12 +36,12 @@
                 <div class="about-content">
                     <h3>{{ about.title }}</h3>
                     <p>{{ about.description }}</p>
-                    <a href="{{ about.link.url }}" class="button">{{  about.link.text }}</a>
+                    <a href="/wzmsite{{ about.link.url }}" class="button">{{  about.link.text }}</a>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="about-img">
-                    <img src="{{ about.image }}" alt="">
+                    <img src="/wzmsite{{ about.image }}" alt="">
                 </div>
             </div>
         </div>
@@ -78,8 +78,8 @@
         {% for brand in collections.brands %}
             <div class="col-md-3 col-6 single-brand">
                 <div class="inner">
-                    <a href="{{ brand.data.url }}">
-                        <img src="{{ brand.data.image }}" alt="{{ brand.data.name }}">
+                    <a href="/wzmsite{{ brand.data.url }}">
+                        <img src="/wzmsite{{ brand.data.image }}" alt="{{ brand.data.name }}">
                     </a>
                 </div>
             </div>
@@ -102,7 +102,7 @@
                     <p>{{ testimonial.data.quote }}</p>
                     <div class="client-info">
                         <div class="client-img">
-                            <img src="{{ testimonial.data.headshot }}" alt="client">
+                            <img src="/wzmsite{{ testimonial.data.headshot }}" alt="client">
                         </div>
                         <div class="client-data">
                             <h4>{{ testimonial.data.name }}</h4>
